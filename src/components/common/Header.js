@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Text, View } from 'react-native';
 
 const Header = (props) => {
@@ -27,6 +27,10 @@ const styles = {
   textStyle: {
     fontSize: 20,
   },
+};
+
+Header.propTypes = {
+  headerText: PropTypes.string.isRequired,
 };
 
 export { Header };
