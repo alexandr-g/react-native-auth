@@ -1,3 +1,15 @@
 {
-  "extends": "airbnb"
+  "extends": "airbnb",
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "rules": {
+    "no-use-before-define": 0, // personal preference
+    "comma-dangle": [2, "never"],
+    "react/jsx-filename-extension": [0, { "extensions": [".js",  ".jsx"] }]
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  }
 }
