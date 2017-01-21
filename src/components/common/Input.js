@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { TextInput, View, Text } from 'react-native';
 
 const Input = ({ label, value, onChangeText, placeholder }) => {
@@ -38,6 +38,13 @@ const styles = {
     flexDirection: 'row',
     alignItems: 'center'
   }
+};
+
+Input.propTypes = {
+  label: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  onChangeText: PropTypes.func.isRequired,
+  placeholder: PropTypes.string
 };
 
 export { Input };
