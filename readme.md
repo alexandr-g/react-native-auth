@@ -24,3 +24,5 @@
 **4. To start the project in simulator:**
 
 `react-native run-ios`
+
+**Reference:** this app was build as a part of https://github.com/StephenGrider Udemy course
